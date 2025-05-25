@@ -9,63 +9,166 @@
       font-family: 'Vazir', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #e0f2f1, #ffffff);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background: #f9f9f9;
       text-align: center;
     }
 
-    h1 {
-      font-size: 36px;
-      color: #00796b;
-      margin-bottom: 10px;
+    header {
+      background: linear-gradient(to left, #26a69a, #00796b);
+      color: white;
+      padding: 40px 20px 30px;
     }
 
-    p {
+    header h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
+    }
+
+    header p {
       font-size: 18px;
-      color: #444;
-      margin-bottom: 30px;
+      margin: 0;
     }
 
     .buttons {
+      margin: 20px auto;
       display: flex;
-      gap: 15px;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 15px;
     }
 
-    a.button {
-      text-decoration: none;
+    .button {
       background-color: #009688;
       color: white;
-      padding: 12px 25px;
+      padding: 12px 20px;
       border-radius: 8px;
+      text-decoration: none;
       font-size: 16px;
       transition: background 0.3s;
     }
 
-    a.button:hover {
+    .button:hover {
       background-color: #00796b;
     }
 
-    @media (max-width: 500px) {
-      h1 { font-size: 28px; }
-      p { font-size: 16px; }
-      a.button { font-size: 15px; padding: 10px 20px; }
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .categories, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .box img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box h3 {
+      margin: 10px 0 5px;
+      color: #00796b;
+    }
+
+    .box p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #eeeeee;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>به فروشگاه لنج استور خوش آمدید</h1>
-  <p>انواع لوازم خانگی با کیفیت بالا و قیمت مناسب</p>
-  <div class="buttons">
-    <a href="products.html" class="button">🛍 مشاهده محصولات</a>
-    <a href="about.html" class="button">ℹ️ درباره ما</a>
-    <a href="contact.html" class="button">📞 تماس با ما</a>
-    <a href="cart.html" class="button">🛒 سبد خرید</a>
-  </div>
+
+  <header>
+    <h1>به فروشگاه لنج استور خوش آمدید</h1>
+    <p>انواع لوازم خانگی با کیفیت بالا و قیمت مناسب</p>
+    <div class="buttons">
+      <a href="products.html" class="button">🛍 مشاهده محصولات</a>
+      <a href="about.html" class="button">ℹ️ درباره ما</a>
+      <a href="contact.html" class="button">📞 تماس با ما</a>
+      <a href="cart.html" class="button">🛒 سبد خرید</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>🔹 دسته‌بندی‌ها</h2>
+    <div class="categories">
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=یخچال" alt="یخچال">
+        <h3>یخچال و فریزر</h3>
+        <p>انواع یخچال‌های خانگی و صنعتی</p>
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=لباسشویی" alt="لباسشویی">
+        <h3>ماشین لباسشویی</h3>
+        <p>برترین برندهای لباسشویی در بازار</p>
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=مایکروویو" alt="مایکروویو">
+        <h3>مایکروویو</h3>
+        <p>مدرن‌ترین دستگاه‌های پخت سریع</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🆕 کالاهای جدید</h2>
+    <div class="products">
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=ظرفشویی" alt="ظرفشویی جدید">
+        <h3>ماشین ظرفشویی بوش</h3>
+        <p>۱۴,۵۰۰,۰۰۰ تومان</p>
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=جاروبرقی" alt="جاروبرقی جدید">
+        <h3>جاروبرقی ال‌جی</h3>
+        <p>۶,۵۰۰,۰۰۰ تومان</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔥 پرفروش‌ترین‌ها</h2>
+    <div class="products">
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=یخچال+پرفروش" alt="پرفروش یخچال">
+        <h3>یخچال سامسونگ RT89</h3>
+        <p>۱۲,۰۰۰,۰۰۰ تومان</p>
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/220x140?text=لباسشویی+پرفروش" alt="پرفروش لباسشویی">
+        <h3>لباسشویی بوش 9 کیلویی</h3>
+        <p>۱۵,۵۰۰,۰۰۰ تومان</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 لنج استور - طراحی شده برای ارائه بهترین تجربه خرید آنلاین
+  </footer>
+
 </body>
 </html>
+
