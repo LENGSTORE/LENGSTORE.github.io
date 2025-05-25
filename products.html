@@ -1,49 +1,99 @@
-<style>
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .product-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 250px;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease;
-  }
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
-  .product-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  .product-card button {
-    background: #28a745;
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>محصولات - لنج استور</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
 
-<div class="product-grid">
-  <div class="product-card">
-    <img src="https://via.placeholder.com/250" alt="یخچال">
-    <h3>یخچال سامسونگ</h3>
-    <p>۱۲ میلیون تومان</p>
-    <button>افزودن به سبد خرید</button>
-  </div>
+    h1 {
+      text-align: center;
+      color: #333;
+    }
 
-  <div class="product-card">
-    <img src="https://via.placeholder.com/250" alt="مایکروویو">
-    <h3>مایکروویو ال‌جی</h3>
-    <p>۸ میلیون تومان</p>
-    <button>افزودن به سبد خرید</button>
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      color: #666;
+    }
+
+    .btn {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>محصولات ما</h1>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200" alt="یخچال">
+      <h3>یخچال سامسونگ</h3>
+      <p>۱۲,۰۰۰,۰۰۰ تومان</p>
+      <button class="btn">افزودن به سبد خرید</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200" alt="مایکروویو">
+      <h3>مایکروویو ال‌جی</h3>
+      <p>۸,۰۰۰,۰۰۰ تومان</p>
+      <button class="btn">افزودن به سبد خرید</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200" alt="لباسشویی بوش">
+      <h3>ماشین لباسشویی بوش</h3>
+      <p>۱۵,۵۰۰,۰۰۰ تومان</p>
+      <button class="btn">افزودن به سبد خرید</button>
+    </div>
+
   </div>
-</div>
+</body>
+</html>
