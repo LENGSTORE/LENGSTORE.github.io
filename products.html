@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang='fa' dir='rtl'><head><meta charset='UTF-8'><title>محصولات</title></head><body><h1>محصولات ما</h1><div><img src='https://via.placeholder.com/300' alt='یخچال'><p>یخچال - 12 میلیون تومان</p><button>افزودن به سبد خرید</button></div><div><img src='https://via.placeholder.com/300' alt='لباسشویی'><p>ماشین لباسشویی - 15 میلیون تومان</p><button>افزودن به سبد خرید</button></div><a href='index.html'>بازگشت</a></body></html>
+<style>
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .product-card button {
+    background: #28a745;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="product-grid">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250" alt="یخچال">
+    <h3>یخچال سامسونگ</h3>
+    <p>۱۲ میلیون تومان</p>
+    <button>افزودن به سبد خرید</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250" alt="مایکروویو">
+    <h3>مایکروویو ال‌جی</h3>
+    <p>۸ میلیون تومان</p>
+    <button>افزودن به سبد خرید</button>
+  </div>
+</div>
